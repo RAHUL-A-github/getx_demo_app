@@ -4,15 +4,15 @@ import 'package:get/get.dart';
 import 'controller.dart';
 import 'generated/locale_keys.g.dart';
 
-void main() async {
+main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   runApp(
     EasyLocalization(
         path: 'assets/lang',
         supportedLocales: const [
-          Locale('en'),
-          Locale('pt'),
+          Locale('en','US'),
+          Locale('pt','BR'),
         ],
         child: const MyApp()),
   );
